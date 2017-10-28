@@ -1,0 +1,8 @@
+git clone https://github.com/egk242/essais.git
+docker pull plusminus/jdownloader2-headless
+mkdir -p config/jd2
+mkdir Downloads
+docker run -d --name jd2 \
+ -v /root/essai/config/jd2:/opt/JDownloader/cfg \
+ -v /root/essai/Downloads:/downloads \
+ plusminus/jdownloader2-headless
