@@ -6,3 +6,12 @@ docker run -d --name jd2 \
  -v /root/essai/config/jd2:/opt/JDownloader/cfg \
  -v /root/essai/Downloads:/downloads \
  plusminus/jdownloader2-headless
+
+
+
+ # sauvegarder changements
+ git config --global user.email ""
+ git config --global user.name ""
+ git add .
+ git commit -m "commentaire"
+ git push
